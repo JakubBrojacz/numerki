@@ -22,6 +22,7 @@ if(wielomianowo)
 end
 y_punkty = f(x_punkty);
 
+figure
 hold on
 plot(x, y1);
 plot(x, y2);
