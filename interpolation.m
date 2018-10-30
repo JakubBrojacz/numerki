@@ -1,4 +1,12 @@
 function sx = interpolation(f, a, b, n, ourX)
+%INTERPOLATION liczy wartosci funkcji interpolacyjnej dla argumentow ourX
+%f   -    funkcja interpolowana
+%a,b -  granice przedzialu interpolowania
+%n+1 -  liczba wezlow interpolacji (indeksowane od 0 do n na wykladzie,
+%       tutaj od 1 do n+1)
+%ourX - argumenty funkcji interpolacyjnej
+%sx  - zwracane wartosci S(ourX)
+
     x = linspace(a,b,n+1);
     h = (b-a)/(n);
     alpha = findAlpha(f, a, b, n);

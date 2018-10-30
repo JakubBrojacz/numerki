@@ -1,4 +1,11 @@
 function [alpha]=findAlpha(f, a, b, n)
+%FINDALPHA szuka wspolczynnikow przy odpowiednich funkcjach sklejanych z
+%przestrzeni S3(delta,2) w bazie podanej na wykladzie
+%f   -    funkcja interpolowana
+%a,b -  granice przedzialu interpolowania
+%n+1 -  liczba wezlow interpolacji (indeksowane od 0 do n na wykladzie,
+%       tutaj od 1 do n+1)
+%alpha - zwracane wspolczynniki
     x = linspace(a, b, n+1);
     fs = f(x);
     
